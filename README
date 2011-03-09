@@ -1,0 +1,5 @@
+-Add private FacebookImageLoader imageLoader; to your listviews adapter
+-Instantiate it in the constructor with a reference to your context: imageLoader = new FacebookImageLoader(context); 
+-Then call within your  adapters getView function like so  imageLoader.load(id, profileImage); with a string representing the 
+users Facebook id and a reference to the ImageView you want the image loaded to. 
+
